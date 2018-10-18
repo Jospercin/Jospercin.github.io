@@ -68,31 +68,19 @@ width: 100%;
 
 img{
 
-    border:none;
+border:none;
+float:left;
+margin-top:5px;
+}
 
- float:left;
+p{
 
- margin-top:5px;}
-
-
-
-
-
-
-
-p{       font-family:Arial, Helvetica, sans-serif;
-
- font-size:12px;
-
- text-align:justify;
-
- line-height:18px;
-
- color:#CCC;}
-
-
-
-
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+text-align:justify;
+line-height:18px;
+color:#CCC;
+}
 
 .ajuste{
 
@@ -103,7 +91,8 @@ p{       font-family:Arial, Helvetica, sans-serif;
 
 .nomargingright{
 
- margin-right:0px !important;}
+ margin-right:0px !important;
+}
 
 #cuerpo{
 
@@ -257,7 +246,7 @@ line-height:16px;
     padding:10px 0px 0px 0px;
 }
 
-.update ul{
+.hobbies ul{
 
     width:100%;
     list-style:none;
@@ -279,7 +268,7 @@ line-height:16px;
     display:inline;
 }		
 
-.update ul li a:hover{
+.hobbies ul li a:hover{
 
     float:left;
     text-decoration: underline;
