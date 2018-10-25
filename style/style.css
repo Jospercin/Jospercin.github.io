@@ -4,7 +4,7 @@ body{
     background: #020202 url(../img/highlight.jpg) no-repeat center;
     font-family:Helvatica,Arial, "Times New Roman", Times, serif;
     font-size:12px;
-    color:#bb5544;
+    color: #fff;
     margin:0;
     padding:0;
     line-height:1.5em;
@@ -37,7 +37,7 @@ h1{
 
 h2{
     font-size:18px;
-    color: #bb5544;
+    color: #e37c32;
     text-transform:capitalize;
     line-height:20px;
     text-align:left;
@@ -45,7 +45,7 @@ h2{
 
 h3{
     font-size:24px;
-    color: #bb5544;
+    color: #e37c32;
     text-transform:capitalize;
     line-height:28px;
     text-align:left;
@@ -115,7 +115,7 @@ margin-top:-65px;
 
 #logo a {
 
-background:url(../images/logo.png) no-repeat;
+background:url(../img/logo.png) no-repeat;
 display: block;
 height:64px;
 margin: 0px 0 0;
@@ -126,12 +126,12 @@ width:230px;
 
 
 
-#logo a span {
+#logo a span{
 
 display: none;
 }
 
-#contenido {
+#contenido{
 
 width: 960px;
 box-shadow: 0 0 10px #000000;
@@ -141,13 +141,69 @@ padding:0px;
 z-index:50;
 }
 
+#principal{
+
+width:100%;
+float:left;
+background: #333;
+
+}
+
+.habilidades{
+    width:270px;
+    float: right;
+    margin-top: 75px;
+    margin-bottom: 20px;
+
+}
+
+.habilidades .bloque_habs {
+    width: 100%;
+}
+
+.habilidades_ic{
+    display:block;
+    padding-top:15px;
+}
+
+.habilidades_nom{
+    display:block;
+}
+
+.habilidades_sta{
+    float:left;
+    width:100%;
+    padding-bottom: 8px;
+    border-bottom: #666 1px dotted;
+}
+
+.estrella {
+
+    display:block;
+    padding-right: 7px;
+}
+
+.pagsobremi{
+    
+    width:930px;
+    float:left;
+    padding: 15px 0px 0px 0px;
+    margin: 1px 0px 0px 15px;
+
+}
+
+.eddsobremi{
+    width:630px;
+    float:left;
+    padding-bottom:20px;
+}
+
+
+
 #parteizq{
 
     width:360px;
     float:left;
-    height:589px;
-    background:#333;
-    padding-bottom:20px;
 }
 
 #parteder{
@@ -192,12 +248,12 @@ list-style-type: none;
 .nav li a {
 
 float: left;
-padding:0px 13px 0px 13px;
+padding: 0px 10px 0px 13px;
 }
 
 .nav li a:hover {
 
-color:#666;
+color: #fff;
 text-decoration:none;
 }
 
@@ -222,9 +278,32 @@ margin:40px 0px 0px 40px;
 padding:15px 0px 0px 0px;
 }
 
+.envio{
+    width: 75px;
+    height: 28px;
+    float: left;
+    background: url(../img/send_btn.png) no-repeat;
+    text-align: center;
+}
+
+.envio a{
+    text-align: center;
+    line-height: 32px;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: bold;
+    color: #FFF;
+}
+
+.envio a:hover{
+    text-align: center;
+    line-height: 32px;
+    text-decoration: none;
+    color: #bb55;
+}
+
 .princ_descripcion{
 
-    width:280px;
     float:left;
     border-top:#606060 1px solid;
     line-height:22px;
@@ -302,4 +381,106 @@ margin:0 auto;
 display:block;
 padding-top:0px;
 }		
+
+.pagcontacto{
+    width: 930px;
+    float:left;
+    padding: 15px 0px 0px 0px;
+    margin: 1px 0px 0px 15px;
+}
+
+.objcontacto{
+    width:630px;
+    float:left;
+    padding-bottom:20px;
+}
+
+.gris{
+    width:900px;
+    height:22px;
+    background: #262626;
+}
+
+#atajo{
+    width: auto;
+    float: right;
+}
+
+#atajo ul{
+    width: 100%;
+    float: right;
+}
+
+#atajo ul li{
+    float:left;
+    list-style: none;
+    padding-left: 5px;
+    font-size: 11px;
+}
+
+#atajo ul li a{
+    color: #bb55;
+    font-size: 11px;
+    text-decoration: none;
+
+}
+
+#atajo ul li a:hover{
+    color: #999;
+    text-decoration: underline;
+
+}
+
+.bar-contacto{
+    width: 270px;
+    float: right;
+    margin-top: 75px;
+    margin-bottom: 20px;
+
+}
+
+#direcciones{
+    width: 100%;
+}
+
+#direcciones ul{
+    width: 100%;
+    margin-top:15px;
+}
+
+#direcciones ul li{
+    list-style:none;
+    padding-bottom: 8px;
+}
+
+.controlbloq{
+    display: block;
+    clear: left;
+    position: relative;
+}
+
+.controlbloq input {
+    width: 270px;
+    height: 40px;
+    padding:  0px 0px 0px 30px;
+    float: left;
+    background: #262626;
+    border: #666 1px solid;
+    margin: 10px 0px 0px 0px;
+    position:relative;
+    color: #999;
+}
+
+.controlbloq textarea{
+    width: 570px;
+    height: 130px;
+    padding: 20px 10px 0px 30px;
+    background: #262626;
+    clear: left;
+    border: #666 1px solid;
+    margin: 10px 0px 0px 0px;
+    position: relative;
+    color: #999;
+
+}
 
