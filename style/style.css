@@ -401,34 +401,7 @@ padding-top:0px;
     background: #262626;
 }
 
-#atajo{
-    width: auto;
-}
 
-#atajo ul{
-    width: 100%;
-    float: right;
-}
-
-#atajo ul li{
-    float:left;
-    list-style: none;
-    padding-left: 5px;
-    font-size: 11px;
-}
-
-#atajo ul li a{
-    color: #bb55;
-    font-size: 11px;
-    text-decoration: none;
-
-}
-
-#atajo ul li a:hover{
-    color: #999;
-    text-decoration: underline;
-
-}
 
 .bar-contacto{
     width: 270px;
