@@ -490,3 +490,44 @@ padding-top:0px;
 	left: 0;
 	bottom: 0;
 }
+
+.social-sharing ul.menu-social {
+	list-style: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrapwrap;
+	flex-wrap: nowrap;
+}
+
+.social-sharing ul.menu-social li {
+	flex: 0 1 40px;
+	height: 40px;
+}
+ul.menu-social li a::before {
+	content: "\f135";
+	display: inline-block;
+	font-family: FontAwesome;
+	font-size: 20px;
+	vertical-align: middle;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	line-height: 40px;
+}
+ul.menu-social li a[href*="facebook.com"]::before {
+	content: "\f09a";
+}
+ul.menu-social li a[href*="twitter.com"]::before {
+	content: "\f099";
+}
+ul.menu-social li a[href*="pinterest.com"]::before {
+	content: "\f231";
+}
+ul.menu-social li a[href*="whatsapp://send"]::before {
+	content: "\f232";
+}
