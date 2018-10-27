@@ -1,4 +1,7 @@
-
+.foto{
+	width: 150px;
+	height: 140px;
+}
 
 body{
     background: #020202 url(../img/highlight.jpg) no-repeat center;
