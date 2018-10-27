@@ -484,3 +484,61 @@ padding-top:0px;
 
 }
 
+.social-sharing {
+	display: block;
+	position: fixed;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+}
+
+.social-sharing ul.menu-social {
+	list-style: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrapwrap;
+	flex-wrap: nowrap;
+}
+
+.social-sharing ul.menu-social li {
+	flex: 0 1 40px;
+	height: 40px;
+}
+.social-sharing ul.menu-social li.newsletter {
+	flex: 1 1 auto;
+	line-height: 40px;
+	position: relative;
+	background-color: #fafafa;
+	background-image: repeating-linear-gradient(135deg, #ffe4e1 0px, #ffe4e1 5px, transparent 5px, transparent 10px, #e1f3ff 10px, #e1f3ff 15px, transparent 15px, transparent 20px);
+}
+.social-sharing ul.menu-social li.next {
+	flex: 1 1 auto;
+}
+ul.menu-social li a::before {
+	content: "\f135";
+	display: inline-block;
+	font-family: FontAwesome;
+	font-size: 20px;
+	vertical-align: middle;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	line-height: 40px;
+}
+ul.menu-social li a[href*="facebook.com"]::before {
+	content: "\f09a";
+}
+ul.menu-social li a[href*="twitter.com"]::before {
+	content: "\f099";
+}
+ul.menu-social li a[href*="pinterest.com"]::before {
+	content: "\f231";
+}
+ul.menu-social li a[href*="web.whatsapp.com"]::before {
+	content: "\f232";
+}
