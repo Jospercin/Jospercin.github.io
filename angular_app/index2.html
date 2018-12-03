@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en"  ng-app="angular_app">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Registro Simple Con AngularJs</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/controladores.js"></script>
+    
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet' type='text/css'>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+  
+</head>
+
+<body ng-controller="UserController; EjemploDatos">
+
+<div angular_app></div>
+  <form name="userForm" class="userForm">
+  <div class='login'>
+    <h2>Registro</h2>
+    <!--Campo de Usuario (username) con distintas propiedades-->
+    <input name='username' ng-model='user.name' ng-model-options="{ debounce: 1000 }" placeholder='Username' type='text' required />
+    <!--Required o mensaje de error-->
+    <span class="messages" ng-show="userForm.$submitted || userForm.name.$touched">
+      <span class="error" ng-show="userForm.name.$error.required">El campo es obligatorio.</span>
+    </span>
+    <!--Campo de Contraseña (password) con distintas propiedades-->
+    <input id='pw' ng-model='user.password' name='password' placeholder='Password' type='password' ng-model-options="{ debounce: 1000 }" required />
+    <!--Required o mensaje de error-->
+    <span class="messages" ng-show="userForm.$submitted || userForm.password.$touched">
+      <span class="error" ng-show="userForm.password.$error.required">El campo es obligatorio.</span>
+    </span>
+    <!--Campo de Email (email) con distintas propiedades-->
+    <input name='email' ng-model='user.email' placeholder='E-Mail Address' type='text' ng-model-options="{ debounce: 1000 }" required />
+    <!--Required o mensaje de error-->
+    <span class="messages" ng-show="userForm.$submitted || userForm.email.$touched">
+      <span class="error" ng-show="userForm.email.$error.required">El campo es obligatorio.</span>
+    </span>
+    <!--Campo de Validacion (checkbox) para reglas y condiciones de uso-->
+    <div class='agree'>
+      <input id='agree' name='agree' type='checkbox' required/>
+      <label for='agree'></label>Acepto reglas y condiciones de uso
+    </div>
+    <!--Boton animado para registro-->
+    <input class='animated' type='submit' ng-model='user.registro' value='Register' >
+    <br/>
+    <a class='forgot' href='index.html'>¿Tiene ya una cuenta?</a>
+    <br/>
+    
+    <!--Reinicio de los campos del formulario-->
+    <!--Boton animado para reinicio de datos-->
+    <input ng-click="userForm.userName.$rollbackViewValue(); user.name=''; user.password=''; user.email='';" class='animated' type='submit' ng-model='user.registro' value='Reiniciar' >
+    
+  </div>
+  </form>
+  
+</body>
+
+</html>

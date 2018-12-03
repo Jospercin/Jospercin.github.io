@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en"  ng-app="angular_app">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Registro Simple Con AngularJs</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/controladores.js"></script>
+    
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet' type='text/css'>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style2.css">
+
+    <script>
+        angular.module('valueExample', [])
+              .controller('ExampleController', ['$scope', function($scope) {
+                $scope.names = ['HLC', 'DWES', 'DWEC', 'DDI'];
+                $scope.my = { favorite: 'say' };
+              }]);
+    </script>
+</head>
+
+<body>
+<form name="userForm" class="userForm">
+    <div class='pruebas'>
+            <h2>¿Cuál es tu asignatura favorita?</h2>
+            <br/>
+        <select class="form-control" type="radio" ng-model="my.favorite"
+            ng-value="name" id="{{name}}" name="favorite">
+            <option value="">Seleccione una opcion</option>
+            <option value="HLC">HLC</option>
+            <option value="DWES">DWES</option>
+            <option value="DWEC">DWEC</option>
+            <option value="DDI">DDI</option>
+        </select>
+
+        <br/><br/>
+          <div>Has seleccionado {{my.favorite}}</div>
+    
+        <br/><br/><br/>
+            Sorpresa: <input type="checkbox" ng-model="checked" aria-label="Toggle ngShow"><br />
+        <div class="check-element animate-show-hide" ng-show="checked">
+        <a href='index2.html'>Hola, ¿Cómo estás?</a>
+        </div>
+        <br/><br/>
+        <div ng-init="items=['Click nº 3', 'Click nº 2', 'Click nº 1', 'Click nº 0']">
+                <button ng-click="items.unshift('Click nº  ' + items.length)">Añade un Click</button>
+                <hr />
+                <table>
+                  <tr ng-repeat="item in items" ng-class-odd="'odd'">
+                    <td>{{ item }}</td>
+                  </tr>
+                </table>
+        </div>
+
+        <br/><br/>
+
+        <input id="setbtn" type="button" value="Grande?" ng-click="myVar='my-class'">
+        <input id="clearbtn" type="button" value="Pequeño?" ng-click="myVar=''">
+        <br/><br/><br/>
+        <span class="base-class" ng-class="myVar">Pequeño o Grande</span>
+    </div>  
+      
+</form>
+
+
+</body>
+
+</html>
